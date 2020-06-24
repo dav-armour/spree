@@ -4,6 +4,7 @@ FactoryBot.define do
     name              { 'Spree Test Store' }
     url               { 'www.example.com' }
     mail_from_address { 'spree@example.org' }
+    new_order_notifications_email { 'store-owner@example.com' }
     default_currency  { 'USD' }
     facebook          { 'spreecommerce' }
     twitter           { 'spreecommerce' }
