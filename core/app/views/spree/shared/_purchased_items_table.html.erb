@@ -54,7 +54,7 @@
   <% end %>
   <% order.adjustments.eligible.each do |adjustment| %>
     <% next if (adjustment.source_type == 'Spree::TaxRate') || (adjustment.amount == 0) %>
-    <%= render 'spree/shared/purchased_items_table/adjustment', adjustment: adjustment %>
+    <%= render 'spree/shared/purchased_items_table/adjustment', adjustment: adjustment, order: order %>
   <% end %>
   <%= render 'spree/shared/purchased_items_table/total', order: order %>
 </table>
