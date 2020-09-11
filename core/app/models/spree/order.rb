@@ -13,7 +13,7 @@ module Spree
     include Spree::Order::Payments
     include Spree::Order::StoreCredit
     include Spree::Order::AddressBook
-    include Spree::Core::NumberGenerator.new(prefix: 'R')
+    include Spree::Core::NumberGenerator.new(prefix: '1')
     include Spree::Core::TokenGenerator
 
     include NumberAsParam
